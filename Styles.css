@@ -6,14 +6,14 @@
 
 .contenedor-juego{
     height:100vh;
-    max-width: 1250px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap:1rem;
     text-align: center;
-
+    background-color: black;
+    color: white;
 }
 
 .juego-titulo, .juego-info{
@@ -28,11 +28,28 @@
 }
 
 .cuadro{
-    width:3rem;
-    height: 3rem;
-    border: 1px solid rgb(168, 168, 168);
+    width:100px;
+    height: 100px;
+    border: 5px solid black;
     text-align: center;
-    color:rgb(7, 255, 69);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    transition: background-color ease-in 0.2s;
+}
+
+.cuadro:hover{
+    background-color: black; 
+}
+
+.cuadro_medio{
+    width:100px;
+    height: 100px;
+    border: 5px solid black;
+    text-align: center;
+    color: black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,17 +57,12 @@
     transition: background-color ease-in 0.2s;
 }
 
-.cuadro:hover{
-   
-    background-color:#cccc;
-    
-}
-
 .juego-boton{
     display:inline-flex;
     padding: 1rem 1rem;
-    background:red ;
-    color: white;
+    background: white;
+    background-color: white;
+    color: black;
     cursor: pointer;
     justify-content: center;
     font-weight: bold;
@@ -61,7 +73,7 @@
 .juego-boton:hover{
   
     background:white ;
-    color: red;
-    border: 1px solid red;
+    color: black;
+    border: 1px solid white;
    
 }
