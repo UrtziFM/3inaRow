@@ -24,7 +24,7 @@ cuadro_btn.forEach(boton => {
 
   function nEmpieza(){
   
-      const texto_info = "Fijese bien, los números van cambiado de posición"      
+      const texto_info = "Created by "      
       info.innerHTML = texto_info;
       
   }
